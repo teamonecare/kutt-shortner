@@ -8,5 +8,4 @@ export NVM_DIR="$HOME/.nvm"
 
 cd /home/ubuntu/app/kutt-shortner
 
-pm2 delete all 
 pm2 startOrReload ecosystem.config.js --env production
