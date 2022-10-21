@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'one-care-be',
+      name: 'onecare-kutt-shortner',
       script: 'npm',
       args: 'run start',
       instances: 1,
@@ -19,7 +19,7 @@ module.exports = {
       // pm2 start ecosystem.config.js --env production
       env_production: {
         HOST: '0.0.0.0',
-        PORT: 8080,
+        PORT: 3000,
         NODE_ENV: 'production',
       },
       output: './logs/console.log',
