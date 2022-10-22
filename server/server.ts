@@ -52,7 +52,7 @@ app.prepare().then(async () => {
   server.use(express.static("static"));
   server.use(helpers.ip);
 
-  server.use(asyncHandler(links.redirectCustomDomain));
+  // server.use(asyncHandler(links.redirectCustomDomain));
 
   server.use("/api/v2", routes);
   server.use("/api", __v1Routes);
